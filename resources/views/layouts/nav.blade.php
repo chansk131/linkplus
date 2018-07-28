@@ -3,6 +3,22 @@
         <a class="navbar-brand" href="{{ url('/') }}">
             LinkPlus
         </a>
+        
+
+        <ul class="navbar-nav">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Categories
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Electronics</a>
+                    <a class="dropdown-item" href="#">Mobile & Tablets</a>
+                    <a class="dropdown-item" href="#">Fashion</a>
+                    <a class="dropdown-item" href="#">Furniture</a>
+                </div>
+            </li>
+        </ul>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
             <span class="navbar-toggler-icon"></span>
         </button>
