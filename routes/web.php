@@ -19,3 +19,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/search', 'ItemsController@index');
+
+// Admin
+Route::get('/dev/home', 'AdminController@index');
+Route::get('/dev/category', 'AdminController@category');
+Route::get('/dev/user', 'AdminController@user');
+Route::get('/dev/item', 'AdminController@item');
