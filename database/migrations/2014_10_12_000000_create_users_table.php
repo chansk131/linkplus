@@ -18,8 +18,8 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
-            $table->boolean('is_available');
-            $table->boolean('is_not_blocked');
+            $table->boolean('is_available')->default(TRUE);
+            $table->boolean('is_not_blocked')->default(TRUE);
             $table->rememberToken();
             $table->timestamps();
         });
