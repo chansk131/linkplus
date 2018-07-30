@@ -16,6 +16,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="/css/ionicons.min.css">
+  <!-- DataTables -->
+  <link rel="stylesheet" href="/css/dataTables.bootstrap.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. We have chosen the skin-blue for this starter
@@ -129,7 +131,7 @@ desired effect
     </section>
     <!-- /.sidebar -->
   </aside>
-      
+
   @yield('content')
 
   <!-- Main Footer -->
@@ -150,6 +152,13 @@ desired effect
 <script src="/js/jquery.min.js"></script>
 <!-- Bootstrap 3.3.7 -->
 <script src="/js/bootstrap.min.js"></script>
+<!-- DataTables -->
+<script src="/js/jquery.dataTables.min.js"></script>
+<script src="/js/dataTables.bootstrap.min.js"></script>
+<!-- SlimScroll -->
+<script src="/js/jquery.slimscroll.min.js"></script>
+<!-- FastClick -->
+<script src="/js/fastclick.js"></script>
 <!-- AdminLTE App -->
 <script src="/js/adminlte.min.js"></script>
 

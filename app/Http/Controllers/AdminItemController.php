@@ -24,8 +24,8 @@ class AdminItemController extends Controller
    */
   public function index()
   {
-    $users = \App\User::all();
+    $items = \App\Item::all();
     // return $users;
-    return view('dev.item', compact('users'));
+    return view('dev.item', compact('items'));
   }
 }

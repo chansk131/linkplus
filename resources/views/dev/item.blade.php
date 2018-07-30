@@ -31,20 +31,20 @@
                 <th>#</th>
                 <th>Name</th>
                 <th>Description</th>
+                <th>Price</th>
+                <th>Location</th>
                 <th>is_available</th>
-                <th>is_not_blocked</th>
-                <th>Role</th>
               </tr>
               </thead>
               <tbody>
-              @foreach ($users as $user)
+              @foreach ($items as $item)
               <tr>
-                <td>{{ $user->id }}</td>
-                <td>{{ $user->name }}</td>
-                <td>{{ $user->email }}</td>
-                <td>{{ $user->is_available }}</td>
-                <td>{{ $user->is_not_blocked }}</td>
-                <td>ROLE</td>
+                <td>{{ $items->id }}</td>
+                <td>{{ $items->name }}</td>
+                <td>{{ $items->desc }}</td>
+                <td>{{ $items->price }}</td>
+                <td>{{ $items->location }}</td>
+                <td>{{ $items->is_available }}</td>
               </tr>
               @endforeach
               </tbody>
