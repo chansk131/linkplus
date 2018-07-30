@@ -21,7 +21,16 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/search', 'ItemsController@index');
 
 // Admin
-Route::get('/dev/home', 'AdminController@index');
-Route::get('/dev/category', 'AdminController@category');
-Route::get('/dev/user', 'AdminController@user');
-Route::get('/dev/item', 'AdminController@item');
+Route::get('/dev/home', 'AdminHomeController@index');
+
+Route::get('/dev/category', 'AdminCategoryController@index');
+Route::get('/dev/category/create', 'AdminCategoryController@create');
+Route::get('/dev/category/{id}', 'AdminCategoryController@show');
+
+Route::get('/dev/user', 'AdminUserController@index');
+Route::get('/dev/user/create', 'AdminUserController@create');
+Route::get('/dev/user/{id}', 'AdminUserController@show');
+
+Route::get('/dev/item', 'AdminItemController@index');
+Route::get('/dev/item/create', 'AdminItemController@create');
+Route::get('/dev/item/{id}', 'AdminItemController@show');
