@@ -16,25 +16,41 @@
   </section>
 
   <!-- Main content -->
-  <section class="content container-fluid">
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Category</th>
-        </tr>
-      </thead>
-      <tbody>
-        @foreach ($categories as $category)
-        <tr>
-          <th scope="row">{{ $category->id }}</th>
-          <td>{{ $category->name }}</td>
-        </tr>
-        @endforeach
-      </tbody>
-    </table>
-  </section>
-  <!-- /.content -->
+  <section class="content">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="box">
+            <div class="box-header">
+              <h3 class="box-title">Category Table</h3>
+            </div>
+            <!-- /.box-header -->
+            <div class="box-body">
+              <table id="example1" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Category</th>
+                </tr>
+                </thead>
+                <tbody>
+                @foreach ($categories as $category)
+                <tr>
+                  <td>{{ $category->id }}</td>
+                  <td>{{ $category->name }}</td>
+                </tr>
+                @endforeach
+                </tbody>
+              </table>
+            </div>
+            <!-- /.box-body -->
+          </div>
+          <!-- /.box -->
+        </div>
+        <!-- /.col -->
+      </div>
+      <!-- /.row -->
+    </section>
+    <!-- /.content -->
 </div>
 <!-- /.content-wrapper -->
 @endsection
