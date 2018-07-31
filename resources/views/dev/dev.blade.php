@@ -95,9 +95,9 @@
       <ul class="sidebar-menu" data-widget="tree">
         <li class="header">HEADER</li>
         <!-- Optionally, you can add icons to the links -->
-        <li class="active"><a href="#"><i class="fa fa-link"></i> <span>Users</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Items</span></a></li>
-        <li><a href="#"><i class="fa fa-link"></i> <span>Categories</span></a></li>
+        <li class="active"><a href="/dev/user"><i class="fa fa-link"></i> <span>Users</span></a></li>
+        <li><a href="/dev/item"><i class="fa fa-link"></i> <span>Items</span></a></li>
+        <li><a href="/dev/category"><i class="fa fa-link"></i> <span>Categories</span></a></li>
       </ul>
       <!-- /.sidebar-menu -->
     </section>

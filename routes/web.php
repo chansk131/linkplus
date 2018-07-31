@@ -26,6 +26,7 @@ Route::get('/dev/home', 'AdminHomeController@index');
 Route::get('/dev/category', 'AdminCategoryController@index');
 Route::get('/dev/category/create', 'AdminCategoryController@create');
 Route::get('/dev/category/{id}', 'AdminCategoryController@show');
+Route::post('/dev/category', 'AdminCategoryController@store');
 
 Route::get('/dev/user', 'AdminUserController@index');
 Route::get('/dev/user/create', 'AdminUserController@create');
@@ -36,3 +37,6 @@ Route::get('/dev/item/create', 'AdminItemController@create');
 Route::get('/dev/item/{id}', 'AdminItemController@show');
 
 Route::get('/dev', 'AdminController@index');
+
+Route::get('/dev/upload', 'AdminController@upload');
+Route::post('/dev/create', 'AdminController@create');

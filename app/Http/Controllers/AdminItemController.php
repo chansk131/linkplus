@@ -28,4 +28,9 @@ class AdminItemController extends Controller
     // return $users;
     return view('dev.item', compact('items'));
   }
+
+  public function create()
+  {
+    return view('dev.itemCreate');
+  }
 }

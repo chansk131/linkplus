@@ -18,6 +18,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('password');
+            $table->string('pic')->default('https://s3.eu-west-2.amazonaws.com/linkplus-user/blank-profile-pic.png');
             $table->boolean('is_available')->default(TRUE);
             $table->boolean('is_not_blocked')->default(TRUE);
             $table->rememberToken();
