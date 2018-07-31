@@ -34,3 +34,5 @@ Route::get('/dev/user/{id}', 'AdminUserController@show');
 Route::get('/dev/item', 'AdminItemController@index');
 Route::get('/dev/item/create', 'AdminItemController@create');
 Route::get('/dev/item/{id}', 'AdminItemController@show');
+
+Route::get('/dev', 'AdminController@index');
